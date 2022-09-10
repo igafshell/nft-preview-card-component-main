@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+
+	background: hsl(217, 54%, 11%);
+	font-family: "Outfit", sans-serif;
+}
+
+/* Card Syling */
+main {
+	margin: auto;
+	max-width: 15rem;
+
+	background-color: hsl(216, 50%, 16%);
+	padding: 1.3em;
+	border-radius: 15px;
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+main > h1 {
+}
+
+main > p {
+}
+
+main > section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.eth {
+}
+
+.deadline {
+}
+
+/* Footer */
+body > footer {
+	background: hsl(216, 50%, 16%);
+	color: white;
+
+	padding: 1rem clamp(1rem, 10%, 10rem);
+	margin: 15px;
+
+	border-radius: 100px;
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+body > footer > a {
+	color: rgb(98, 211, 248);
+	text-decoration: none;
+}
+
+body > footer > a:hover {
+	text-decoration: none;
+	color: rgb(1, 137, 182);
+}
+
+.img-nft {
+	width: 100%;
+	border-radius: 7px;
+}
