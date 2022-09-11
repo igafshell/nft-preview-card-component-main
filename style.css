@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
+/* CSS Variables */
+:root {
+	--gray: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--background-dark-blue: hsl(216, 50%, 16%);
+
+	--box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
 /* CSS Reset */
 * {
 	margin: 0;
@@ -20,33 +28,116 @@ body {
 /* Card Syling */
 main {
 	margin: auto;
-	max-width: 15rem;
+	max-width: 17rem;
 
 	background-color: hsl(216, 50%, 16%);
 	padding: 1.3em;
 	border-radius: 15px;
-	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--box-shadow);
 }
 
+/* Styling nft image */
+.nft-img {
+	width: 17rem;
+	height: 17rem;
+	background: url("./images/image-equilibrium.jpg");
+	background-size: 100%;
+	border-radius: 7px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nft-img-inner {
+	display: none;
+	background-color: rgba(0, 255, 247, 0.5);
+
+	width: 100%;
+	height: 100%;
+	border-radius: 7px;
+}
+
+.nft-img:hover .nft-img-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Styling header */
 main > h1 {
+	font-size: 1.3em;
+	margin: 1rem 0px;
 }
 
+main > h1 > a {
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+}
+
+main > h1 > a:hover {
+	color: var(--cyan);
+}
+
+/* Styling paragraph */
 main > p {
+	color: var(--gray);
+	line-height: 1.5;
 }
 
+/* Styling info section */
 main > section {
 	display: flex;
 	justify-content: space-between;
+	padding: 1rem 0px;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.eth,
+.deadline {
+	display: flex;
+	align-items: center;
 }
 
 .eth {
+	color: var(--cyan);
 }
 
 .deadline {
+	color: var(--gray);
+}
+
+.eth-icon,
+.clock-icon {
+	margin-right: 5px;
+}
+
+/* Styling card footer */
+main footer {
+	display: flex;
+	align-items: center;
+	color: var(--gray);
+}
+
+main footer a {
+	color: white;
+	text-decoration: none;
+}
+
+main footer a:hover {
+	color: var(--cyan);
+}
+
+.author-icon {
+	width: 2rem;
+	margin-right: 1rem;
+	border: 1px solid white;
+	border-radius: 50%;
 }
 
 /* Footer */
-body > footer {
+.page-footer {
 	background: hsl(216, 50%, 16%);
 	color: white;
 
@@ -54,21 +145,16 @@ body > footer {
 	margin: 15px;
 
 	border-radius: 100px;
-	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--box-shadow);
 	text-align: center;
 }
 
-body > footer > a {
+.page-footer > a {
 	color: rgb(98, 211, 248);
 	text-decoration: none;
 }
 
-body > footer > a:hover {
+.page-footer > a:hover {
 	text-decoration: none;
 	color: rgb(1, 137, 182);
-}
-
-.img-nft {
-	width: 100%;
-	border-radius: 7px;
 }
