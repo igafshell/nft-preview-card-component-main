@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://your-live-site-url.com)
+- Live Site URL: [Here](https://igafshell.github.io/nft-preview-card-component-main/)
 
 ## My process
 
