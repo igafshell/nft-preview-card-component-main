@@ -50,24 +50,27 @@ main {
 }
 
 .nft-img-inner {
-	display: none;
+	opacity: 0;
 	background-color: rgba(0, 255, 247, 0.5);
 
-	width: 100%;
-	height: 100%;
-	border-radius: 7px;
-}
-
-.nft-img:hover .nft-img-inner {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 7px;
+	transition: all 300ms ease;
+}
+
+.nft-img:hover .nft-img-inner {
+	opacity: 1;
 }
 
 /* Styling header */
 main > h1 {
 	font-size: 1.3em;
 	margin: 1rem 0px;
+	/* transition: all 300ms ease; */
 }
 
 main > h1 > a {
@@ -123,6 +126,7 @@ main footer {
 main footer a {
 	color: white;
 	text-decoration: none;
+	/* transition: all 300ms ease; */
 }
 
 main footer a:hover {
