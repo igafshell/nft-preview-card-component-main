@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-##### Desktop
+#### Desktop
 
 ![The desktop screenshot](./images/desktop-screenshot.png)
 
-##### Mobile
+#### Mobile
 
 ![The mobile screenshot](./images/mobile-screenshot.png)
 
